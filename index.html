@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumikko Lab — 確認・記録・レポート作成を助けるツールの発行元</title>
+<meta name="description" content="Sumikko Lab は、IT 管理者が行う確認・記録・レポート作成の作業を、製品ごとのツールで助ける発行元です。Dependa・SecureNavigator・CA Log Viewer・DMARC 分析支援ツール・CA Policy Analyzer の製品サイトを掲載しています。">
+<link rel="canonical" href="https://sumikkolab.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Sumikko Lab">
+<meta property="og:title" content="Sumikko Lab — 確認・記録・レポート作成を助けるツールの発行元">
+<meta property="og:description" content="Sumikko Lab は、IT 管理者が行う確認・記録・レポート作成の作業を、製品ごとのツールで助ける発行元です。Dependa・SecureNavigator・CA Log Viewer・DMARC 分析支援ツール・CA Policy Analyzer の製品サイトを掲載しています。">
+<meta property="og:url" content="https://sumikkolab.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sumikko Lab — 確認・記録・レポート作成を助けるツールの発行元">
+<meta name="twitter:description" content="Sumikko Lab は、IT 管理者が行う確認・記録・レポート作成の作業を、製品ごとのツールで助ける発行元です。Dependa・SecureNavigator・CA Log Viewer・DMARC 分析支援ツール・CA Policy Analyzer の製品サイトを掲載しています。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sumikkolab.com/#organization",
+      "name": "Sumikko Lab",
+      "url": "https://sumikkolab.com/",
+      "email": "support@sumikkolab.com"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Sumikko Lab",
+      "url": "https://sumikkolab.com/",
+      "publisher": { "@id": "https://sumikkolab.com/#organization" },
+      "inLanguage": ["ja", "en"],
+      "dateModified": "2026-10-27"
+    }
+  ]
+}
+</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2933; --muted: #4b5563; --card: #f5f7fa; --border: #d5dbe3; --accent: #1d4ed8; --accent-fg: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111827; --fg: #e5e7eb; --muted: #b6bfcc; --card: #1b2434; --border: #374151; --accent: #93c5fd; --accent-fg: #0b1220; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Yu Gothic UI', sans-serif; line-height: 1.7; color: var(--fg); background: var(--bg); }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .lang-toggle { text-align: right; padding: 12px 16px 0; max-width: 960px; margin: 0 auto; }
+  .lang-toggle button { background: var(--card); color: var(--fg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 0.85rem; }
+  .lang-toggle button.active { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .section-ja, .section-en { display: none; }
+  .section-ja.visible, .section-en.visible { display: block; }
+  .container { max-width: 960px; margin: 0 auto; padding: 16px 16px 32px; }
+  h1 { font-size: 2rem; margin-top: 16px; }
+  .tagline { font-size: 1.05rem; color: var(--muted); margin-top: 8px; }
+  .subtitle { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; border-left: 3px solid var(--accent); padding-left: 10px; }
+  p { margin-bottom: 10px; }
+  ul { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin-bottom: 4px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 16px 0; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { font-size: 0.92rem; }
+  .card .axis { color: var(--muted); font-size: 0.85rem; }
+  .card .links a { display: inline-block; margin-right: 14px; font-size: 0.9rem; }
+  .footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 16px; font-size: 0.85rem; color: var(--muted); }
+  .footer a { margin-right: 12px; display: inline-block; }
+</style>
+</head>
+<body>
+
+<div class="lang-toggle">
+  <button type="button" id="btn-ja" class="active" aria-pressed="true" onclick="setLang('ja')">日本語</button>
+  <button type="button" id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+
+<div class="section-ja visible" id="content-ja">
+  <div class="container">
+    <h1>Sumikko Lab</h1>
+    <p class="tagline">IT 管理者の確認・記録・レポート作成の作業を、製品ごとのツールで助ける発行元です。</p>
+    <p class="subtitle">最終更新: 2026-10-27</p>
+
+    <h2>コンセプト</h2>
+    <p>Sumikko Lab は、IT 管理者が行う確認・記録・レポート作成の作業を、製品ごとのツールで助ける発行元です。</p>
+    <p>共通の軸は、ログ・レポート・ポリシー・設定を確認・分析して、次の判断につなげる作業を助けることです。</p>
+
+    <h2>製品</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Dependa</h3>
+        <p>SBOM を読み込み、OSS の脆弱性・ライセンスリスクを分類し、レビュー・承認・レポート作成を支援する Windows デスクトップツールです。</p>
+        <p class="axis">助け方: 設定・構成の情報(SBOM)を読み込み、脆弱性・ライセンスリスクを分類し、レビュー・承認・レポート作成につなげます。</p>
+        <p class="links"><a href="https://dependa.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9P84RLQQ401D">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>SecureNavigator</h3>
+        <p>攻撃シナリオ分析、ガイドライン参考確認、対応候補の整理、レポート生成を支援するオフライン評価ツールです。</p>
+        <p class="axis">助け方: 攻撃シナリオ分析、ガイドライン参考確認、対応候補の整理、レポート生成を、オフラインで助けます。</p>
+        <p class="links"><a href="https://secure-navigator.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9N7MGPLZW5V4">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>CA Log Viewer</h3>
+        <p>条件付きアクセスのサインインログを読み、「設定したはず」を実際のサインインログで確認できます。</p>
+        <p class="axis">助け方: 条件付きアクセスのサインインログを読み、「設定したはず」を実際のログで確認します。</p>
+        <p class="links"><a href="https://ca-log-viewer.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NWX79NBG136">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>DMARC 分析支援ツール</h3>
+        <p>DMARC 集約レポートとバウンスメールをローカル端末だけで解析し、なりすまし疑い / 設定不備 / 転送由来 を区別して表示します。</p>
+        <p class="axis">助け方: DMARC 集約レポートとバウンスメールを解析し、なりすまし疑い / 設定不備 / 転送由来 を区別して見ます。</p>
+        <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>CA Policy Analyzer</h3>
+        <p>Microsoft Entra ID の条件付きアクセス (CA) ポリシーをローカル環境で分析するセキュリティツールです。ポリシー JSON をインポートして、ギャップ分析と改善提案を確認できます。</p>
+        <p class="axis">助け方: 条件付きアクセスのポリシー JSON を分析し、ギャップ分析と改善提案を確認します。</p>
+        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">製品サイト</a></p>
+      </article>
+    </div>
+
+    <h2>できないこと・対象外</h2>
+    <ul>
+      <li>このサイトは、製品の機能の詳しい説明をしません。機能の説明は、各製品サイトに掲載しています。</li>
+      <li>個人向けの相談窓口は設けていません。連絡先は、下の 2 つの会社用アドレスです。</li>
+      <li>実績の数字や満足度は、出典のあるものだけを掲載します。</li>
+      <li>検索順位や AI 回答での引用は、約束しません。</li>
+      <li>開発中の製品は掲載していません。</li>
+    </ul>
+
+    <h2>連絡先</h2>
+    <ul>
+      <li>お問い合わせ: <a href="mailto:support@sumikkolab.com">support@sumikkolab.com</a></li>
+      <li>セキュリティの報告: <a href="mailto:security@sumikkolab.com">security@sumikkolab.com</a></li>
+    </ul>
+
+    <div class="footer">
+      <p>© 2026 Sumikko Lab</p>
+      <p>
+        <a href="about.html">発行元の紹介</a>
+        <a href="https://dependa.sumikkolab.com">Dependa</a>
+        <a href="https://secure-navigator.sumikkolab.com">SecureNavigator</a>
+        <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a>
+        <a href="https://dmarc-analysis.sumikkolab.com">DMARC 分析支援ツール</a>
+        <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section-en" id="content-en">
+  <div class="container">
+    <h1>Sumikko Lab</h1>
+    <p class="tagline">A publisher of tools that help IT administrators with checking, recording, and reporting, with a separate tool for each product.</p>
+    <p class="subtitle">Last updated: 2026-10-27</p>
+
+    <h2>Concept</h2>
+    <p>Sumikko Lab is a publisher of tools that help IT administrators with the work of checking, recording, and creating reports, with a separate tool for each product.</p>
+    <p>The common thread is helping people review and analyze logs, reports, policies, and settings, and carry the result into the next decision.</p>
+
+    <h2>Products</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Dependa</h3>
+        <p>A Windows desktop tool that loads an SBOM, classifies OSS vulnerability and license risks, and supports review, approval, and report creation.</p>
+        <p class="axis">How it helps: reads configuration and composition information (SBOM), classifies vulnerability and license risks, and leads into review, approval, and reporting.</p>
+        <p class="links"><a href="https://dependa.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9P84RLQQ401D">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>SecureNavigator</h3>
+        <p>An offline assessment tool that supports attack scenario analysis, reference checks against guidelines, organizing response candidates, and report generation.</p>
+        <p class="axis">How it helps: helps with attack scenario analysis, guideline reference checks, organizing response candidates, and report generation, offline.</p>
+        <p class="links"><a href="https://secure-navigator.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9N7MGPLZW5V4">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>CA Log Viewer</h3>
+        <p>Reads Conditional Access sign-in logs so you can check "the policy I thought I set" against the actual sign-in logs.</p>
+        <p class="axis">How it helps: reads Conditional Access sign-in logs and checks settings against the actual logs.</p>
+        <p class="links"><a href="https://ca-log-viewer.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9NWX79NBG136">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>DMARC Analysis Assistant</h3>
+        <p>Analyzes DMARC aggregate reports and bounce emails on the local device only, and shows suspected spoofing, configuration problems, and forwarding-related results separately.</p>
+        <p class="axis">How it helps: analyzes DMARC aggregate reports and bounce emails and tells suspected spoofing, configuration problems, and forwarding apart.</p>
+        <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
+      </article>
+      <article class="card">
+        <h3>CA Policy Analyzer</h3>
+        <p>A security tool that analyzes Microsoft Entra ID Conditional Access (CA) policies in a local environment. Import policy JSON to review a gap analysis and improvement suggestions.</p>
+        <p class="axis">How it helps: analyzes Conditional Access policy JSON and presents a gap analysis and improvement suggestions.</p>
+        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">Product site</a></p>
+      </article>
+    </div>
+
+    <h2>What this site does not do</h2>
+    <ul>
+      <li>This site does not describe product features in detail. Each product site covers its own features.</li>
+      <li>There is no consultation service for individuals. The only contacts are the two company addresses below.</li>
+      <li>Performance figures and satisfaction ratings are published only when a source exists.</li>
+      <li>Search rankings and citations in AI answers are not promised.</li>
+      <li>Products that are still in development are not listed.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <ul>
+      <li>Inquiries: <a href="mailto:support@sumikkolab.com">support@sumikkolab.com</a></li>
+      <li>Security reports: <a href="mailto:security@sumikkolab.com">security@sumikkolab.com</a></li>
+    </ul>
+
+    <div class="footer">
+      <p>© 2026 Sumikko Lab</p>
+      <p>
+        <a href="about.html">About the publisher</a>
+        <a href="https://dependa.sumikkolab.com">Dependa</a>
+        <a href="https://secure-navigator.sumikkolab.com">SecureNavigator</a>
+        <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a>
+        <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a>
+        <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.getElementById('content-ja').classList.toggle('visible', lang === 'ja');
+  document.getElementById('content-en').classList.toggle('visible', lang === 'en');
+  document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-ja').setAttribute('aria-pressed', lang === 'ja' ? 'true' : 'false');
+  document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('lang', lang); } catch (e) {}
+}
+try {
+  var saved = localStorage.getItem('lang');
+  if (saved === 'en' || saved === 'ja') { setLang(saved); }
+} catch (e) {}
+</script>
+</body>
+</html>
