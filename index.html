@@ -91,6 +91,7 @@
       "url": "https://capolanalyzer.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
+      "offers": { "@type": "Offer", "url": "https://apps.microsoft.com/detail/9NR10PX75754" },
       "publisher": { "@id": "https://sumikkolab.com/#organization" }
     }
   ]
@@ -161,13 +162,14 @@
       <li>ゲストのサインインなど、条件付きアクセスのポリシーが適用されていない箇所を見つけたい → <a href="https://capolicymanager.sumikkolab.com">CA Policy Manager</a></li>
       <li>「サインインできない」と問い合わせを受け、どのポリシーでブロックされたか調べたい → <a href="https://capolicymanager.sumikkolab.com">CA Policy Manager</a></li>
       <li>設定した条件付きアクセスが想定どおり評価されたか、実際のサインインログで確認したい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
-      <li>レポート専用のポリシーを有効にする前に、影響する利用者やアプリを知りたい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
+      <li>レポートモードのポリシーを有効にする前に、影響する利用者やアプリを知りたい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>条件付きアクセスの管理者除外の穴、管理者のロックアウト、レガシー認証のブロック漏れを、ポリシーの JSON から点検したい → <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a></li>
       <li>DMARC レポートで fail した送信元が、なりすましか自社の設定不備か転送かを切り分けたい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
       <li>DMARC レポートに送信元 IP が多く、どこから確認すればよいか分からないので、問題の多い送信元から順に確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
     </ul>
 
     <h2 id="products">製品</h2>
+    <p>いずれも Windows 10/11 向けのデスクトップ アプリで、Microsoft Store から入手できます。有償版(アプリ内購入)がある製品では、無料で使える範囲との違いを各製品サイトで確認できます。</p>
     <div class="cards">
       <article class="card">
         <h3>Dependa</h3>
@@ -203,7 +205,7 @@
         <h3>CA Policy Analyzer</h3>
         <p>条件付きアクセスで管理者を除外したままの穴、管理者のロックアウト、レガシー認証(IMAP/POP3/SMTP)のブロック漏れが気になる管理者向けです。</p>
         <p>ポリシーの JSON をローカルで分析し、これらの隙間と NIST SP 800-53・DISA STIG・Microsoft の基準との差を洗い出します(テナントには接続しません)。</p>
-        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">製品サイト</a></p>
+        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
 
@@ -247,6 +249,7 @@
     </ul>
 
     <h2 id="products-en">Products</h2>
+    <p>All products are desktop apps for Windows 10/11, available from the Microsoft Store. For products with a paid edition (in-app purchase), see each product site for what you can use for free and how the paid edition differs.</p>
     <div class="cards">
       <article class="card">
         <h3>Dependa</h3>
@@ -282,7 +285,7 @@
         <h3>CA Policy Analyzer</h3>
         <p>For administrators concerned about Conditional Access gaps from excluded admins, administrator lockout, and legacy authentication (IMAP/POP3/SMTP) that is not blocked.</p>
         <p>Analyzes policy JSON locally to surface these gaps and the differences from NIST SP 800-53, DISA STIG, and Microsoft baselines (no connection to your tenant).</p>
-        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">Product site</a></p>
+        <p class="links"><a href="https://capolanalyzer.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
 
