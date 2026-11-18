@@ -37,7 +37,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "Dependa",
-      "description": "OSS の利用審査を Excel やメールで管理していて、ベンダーから受け取った SBOM を使ってよいか判断・説明しにくい担当者向けです。SBOM を読み込んで OSS の脆弱性・ライセンスリスクを分類し、レビュー・承認・レポート作成を支援します。",
+      "description": "OSS の利用審査を Excel やメールで管理していて、ベンダーから受け取った SBOM を使ってよいか判断・説明しにくい担当者向けです。SBOM を読み込み、SBOM に記載された脆弱性情報の集計と、OSS ライセンスのリスク分類を行い、レビュー・承認・レポート作成を支援します(脆弱性の集計は CycloneDX 形式。SPDX 形式では脆弱性を調べず、その旨を明示します)。",
       "url": "https://dependa.sumikkolab.com/",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -77,7 +77,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "DMARC Analysis Assistant",
-      "description": "DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすましか、自社の設定不備か、転送かを判別できず困る管理者向けです。送信元 IP ごとの集計と 6 分類で対応すべきものを絞り込め、解析はローカル端末だけで完結します。",
+      "description": "DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けられず困る管理者向けです。送信元 IP ごとの集計と分類で、確認する対象を絞り込めます。分類と保存はローカル端末で行います(送信元 IP の DNS 照会を除く)。",
       "url": "https://dmarc-analysis.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -164,8 +164,8 @@
       <li>設定した条件付きアクセスが想定どおり評価されたか、実際のサインインログで確認したい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>レポートモードのポリシーを有効にする前に、影響する利用者やアプリを知りたい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>条件付きアクセスの管理者除外の穴、管理者のロックアウト、レガシー認証のブロック漏れを、ポリシーの JSON から点検したい → <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a></li>
-      <li>DMARC レポートで fail した送信元が、なりすましか自社の設定不備か転送かを切り分けたい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
-      <li>DMARC レポートに送信元 IP が多く、どこから確認すればよいか分からないので、問題の多い送信元から順に確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>DMARC レポートで fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けたい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>DMARC レポートに送信元 IP が多く、どこから確認すればよいか分からないので、なりすまし疑いの多い送信元から順に確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
     </ul>
 
     <h2 id="products">製品</h2>
@@ -174,7 +174,7 @@
       <article class="card">
         <h3>Dependa</h3>
         <p>OSS の利用審査を Excel やメールで管理していて、ベンダーから受け取った SBOM を使ってよいか判断・説明しにくい担当者向けです。</p>
-        <p>SBOM を読み込んで OSS の脆弱性・ライセンスリスクを分類し、レビュー・承認・レポート作成を支援します。</p>
+        <p>SBOM を読み込み、SBOM に記載された脆弱性情報の集計と、OSS ライセンスのリスク分類を行い、レビュー・承認・レポート作成を支援します(脆弱性の集計は CycloneDX 形式。SPDX 形式では脆弱性を調べず、その旨を明示します)。</p>
         <p class="links"><a href="https://dependa.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9P84RLQQ401D">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -197,8 +197,8 @@
       </article>
       <article class="card">
         <h3>DMARC Analysis Assistant</h3>
-        <p>DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすましか、自社の設定不備か、転送かを判別できず困る管理者向けです。</p>
-        <p>送信元 IP ごとの集計と 6 分類で対応すべきものを絞り込め、解析はローカル端末だけで完結します。</p>
+        <p>DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けられず困る管理者向けです。</p>
+        <p>送信元 IP ごとの集計と分類で、確認する対象を絞り込めます。分類と保存はローカル端末で行います(送信元 IP の DNS 照会を除く)。</p>
         <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -244,8 +244,8 @@
       <li>I want to confirm from actual sign-in logs that Conditional Access was evaluated as intended → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>I want to know which users and apps a report-only policy would affect before I turn it on → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>I want to check my policy JSON for excluded-admin gaps, administrator lockout, and unblocked legacy authentication → <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a></li>
-      <li>I want to tell whether senders failing in DMARC reports are spoofing, our own misconfiguration, or forwarding → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
-      <li>I have many source IPs in my DMARC reports and want to check the ones with the most problems first → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>I want to tell whether senders failing in DMARC reports are suspected spoofing or forwarding/mailing-list traffic → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>I have many source IPs in my DMARC reports and want to check the ones with the most suspected spoofing first → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
     </ul>
 
     <h2 id="products-en">Products</h2>
@@ -254,7 +254,7 @@
       <article class="card">
         <h3>Dependa</h3>
         <p>For teams that manage OSS reviews in Excel or email and find it hard to decide, and explain, whether an SBOM received from a vendor is safe to use.</p>
-        <p>Reads the SBOM, classifies OSS vulnerability and license risks, and supports review, approval, and report creation.</p>
+        <p>Imports an SBOM, summarizes the vulnerabilities it already lists and classifies OSS license risk, and supports review, approval, and report creation (vulnerability summary for CycloneDX; for SPDX, vulnerabilities are not checked, and this is stated explicitly).</p>
         <p class="links"><a href="https://dependa.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9P84RLQQ401D">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -277,8 +277,8 @@
       </article>
       <article class="card">
         <h3>DMARC Analysis Assistant</h3>
-        <p>For administrators who cannot tell whether a sender failing SPF/DKIM in DMARC aggregate reports is spoofing, a misconfiguration on your side, or forwarding.</p>
-        <p>Narrows down what needs action with per-source-IP summaries and six categories, and analyzes everything on the local device.</p>
+        <p>For administrators who cannot tell whether a sender failing SPF/DKIM in DMARC aggregate reports is suspected spoofing or forwarding/mailing-list traffic.</p>
+        <p>Narrows down what to check with per-source-IP summaries and classification. Classification and storage happen on the local device (except DNS lookups of source IPs).</p>
         <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -316,7 +316,7 @@ var META = {
   },
   en: {
     title: 'Windows tools that solve Microsoft 365 / Entra ID, OSS, and security management problems | Sumikko Lab',
-    description: 'Sumikko Lab publishes a Windows tool for each problem IT administrators face: finding Conditional Access gaps, telling spoofing from misconfiguration in DMARC reports, reviewing OSS from an SBOM, and self-checking small-business security. Dependa, SecureNavigator, CA Policy Manager, CA Log Viewer, DMARC Analysis Assistant, and CA Policy Analyzer are listed.'
+    description: 'Sumikko Lab publishes a Windows tool for each problem IT administrators face: finding Conditional Access gaps, telling suspected spoofing from forwarding in DMARC reports, reviewing OSS from an SBOM, and self-checking small-business security. Dependa, SecureNavigator, CA Policy Manager, CA Log Viewer, DMARC Analysis Assistant, and CA Policy Analyzer are listed.'
   }
 };
 function setLang(lang) {
