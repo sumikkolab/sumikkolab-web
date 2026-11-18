@@ -87,7 +87,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "CA Policy Analyzer",
-      "description": "条件付きアクセスで管理者を除外したままの穴、全ユーザー・全アプリをブロックして除外が無いポリシー(テナント全体のロックアウト)、レガシー認証(IMAP/POP3/SMTP など)をブロックするポリシーの有無が気になる管理者向けです。ポリシーの JSON をローカルで分析し、これらの点検結果と、NIST SP 800-53・DISA STIG・Microsoft の基準から選んだ 28 項目の推奨構成との差を示します(テナントには接続しません)。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。",
+      "description": "条件付きアクセスで管理者を除外したままの穴、全ユーザー・全アプリをブロックして除外が無いポリシー(テナント全体のロックアウト)、レガシー認証(IMAP/POP3/SMTP など)をブロックするポリシーの有無が気になる管理者向けです。ポリシーの JSON をローカルで分析し、これらの点検結果と、NIST SP 800-53・DISA STIG・Microsoft の基準から選んだ 28 項目の推奨構成との差を示します(テナントには接続しません)。Entra 管理センターや Microsoft Graph の出力はそのままでは読み込めず、アプリの形式のポリシー JSON が必要です。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。",
       "url": "https://capolanalyzer.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10 version 2004 or later, Windows 11",
@@ -204,7 +204,7 @@
       <article class="card">
         <h3>CA Policy Analyzer</h3>
         <p>条件付きアクセスで管理者を除外したままの穴、全ユーザー・全アプリをブロックして除外が無いポリシー(テナント全体のロックアウト)、レガシー認証(IMAP/POP3/SMTP など)をブロックするポリシーの有無が気になる管理者向けです。</p>
-        <p>ポリシーの JSON をローカルで分析し、これらの点検結果と、NIST SP 800-53・DISA STIG・Microsoft の基準から選んだ 28 項目の推奨構成との差を示します(テナントには接続しません)。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。</p>
+        <p>ポリシーの JSON をローカルで分析し、これらの点検結果と、NIST SP 800-53・DISA STIG・Microsoft の基準から選んだ 28 項目の推奨構成との差を示します(テナントには接続しません)。Entra 管理センターや Microsoft Graph の出力はそのままでは読み込めず、アプリの形式のポリシー JSON が必要です。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。</p>
         <p class="links"><a href="https://capolanalyzer.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
@@ -284,7 +284,7 @@
       <article class="card">
         <h3>CA Policy Analyzer</h3>
         <p>For administrators concerned about Conditional Access gaps from excluded admins, tenant-wide lockout (a policy that blocks all users and all apps with no exclusions), and whether any policy blocks legacy authentication (such as IMAP/POP3/SMTP).</p>
-        <p>Analyzes policy JSON locally and reports these checks, along with the differences from 28 recommended settings selected from NIST SP 800-53, DISA STIG, and Microsoft baselines (no connection to your tenant). Lockout diagnostic results are not shown on screen; they are included in the Pro Excel and PDF output.</p>
+        <p>Analyzes policy JSON locally and reports these checks, along with the differences from 28 recommended settings selected from NIST SP 800-53, DISA STIG, and Microsoft baselines (no connection to your tenant). The app loads only policy JSON in its own format; it cannot load Entra admin center or Microsoft Graph output as is. Lockout diagnostic results are not shown on screen; they are included in the Pro Excel and PDF output.</p>
         <p class="links"><a href="https://capolanalyzer.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
