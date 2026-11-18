@@ -47,7 +47,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "SecureNavigator",
-      "description": "専門知識がなくても自社のセキュリティ対策の抜けを自己点検し、経営層へ説明したい中小企業の管理者向けです。想定される攻撃シナリオ別に弱点と対応候補を整理し、IPA 中小企業向けガイドラインを参考に確認できます(診断データは外部に送信されず、オフラインで動作します)。",
+      "description": "専門知識がなくても自社のセキュリティ対策の抜けを自己点検し、経営層へ説明したい中小企業の管理者向けです。想定される攻撃シナリオ別に弱点と対応候補を整理し、IPA 中小企業向けガイドラインを参考に確認できます(適合を判定するものではありません。診断データは外部に送信されません。Microsoft Store での購入・復元と、起動時のライセンス確認は除きます)。",
       "url": "https://secure-navigator.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -57,7 +57,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "CA Policy Manager",
-      "description": "条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポートモードのままのポリシーを示します(読み取り専用)。",
+      "description": "条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポート専用のままのポリシーを示します(読み取り専用)。",
       "url": "https://capolicymanager.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -87,7 +87,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "CA Policy Analyzer",
-      "description": "条件付きアクセスで管理者を除外したままの穴、管理者のロックアウト、レガシー認証(IMAP/POP3/SMTP)のブロック漏れが気になる管理者向けです。ポリシーの JSON をローカルで分析し、これらの隙間と NIST SP 800-53・DISA STIG・Microsoft の基準との差を洗い出します(テナントには接続しません)。",
+      "description": "条件付きアクセスで管理者を除外したままの穴、管理者のロックアウト、レガシー認証(IMAP/POP3/SMTP)のブロック漏れが気になる管理者向けです。ポリシーの JSON をローカルで分析し、これらの隙間と NIST SP 800-53・DISA STIG・Microsoft の基準との差を洗い出します(テナントには接続しません)。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。",
       "url": "https://capolanalyzer.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -169,7 +169,7 @@
     </ul>
 
     <h2 id="products">製品</h2>
-    <p>いずれも Windows 10/11 向けのデスクトップ アプリで、Microsoft Store から入手できます。有償版(アプリ内購入)がある製品では、無料で使える範囲との違いを各製品サイトで確認できます。</p>
+    <p>いずれも Windows 10/11 向けのデスクトップ アプリで、Microsoft Store から入手できます。Dependa・SecureNavigator・CA Policy Manager には無料で使える範囲と有償版(アプリ内購入)があり、違いは各製品サイトで確認できます。CA Log Viewer と DMARC Analysis Assistant は無料で使えます。CA Policy Analyzer は 15 日間試用でき、その後は Standard または Pro(アプリ内購入)が必要です。</p>
     <div class="cards">
       <article class="card">
         <h3>Dependa</h3>
@@ -180,13 +180,13 @@
       <article class="card">
         <h3>SecureNavigator</h3>
         <p>専門知識がなくても自社のセキュリティ対策の抜けを自己点検し、経営層へ説明したい中小企業の管理者向けです。</p>
-        <p>想定される攻撃シナリオ別に弱点と対応候補を整理し、IPA 中小企業向けガイドラインを参考に確認できます(適合を判定するものではありません)。診断データは外部に送信されず、オフラインで動作します。</p>
+        <p>想定される攻撃シナリオ別に弱点と対応候補を整理し、IPA 中小企業向けガイドラインを参考に確認できます(適合を判定するものではありません)。診断データは外部に送信されません(Microsoft Store での購入・復元と、起動時のライセンス確認は除きます)。診断データの処理にインターネット接続は不要です。</p>
         <p class="links"><a href="https://secure-navigator.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9N7MGPLZW5V4">Microsoft Store</a></p>
       </article>
       <article class="card">
         <h3>CA Policy Manager</h3>
         <p>条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。</p>
-        <p>サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポートモードのままのポリシーを示します(読み取り専用)。</p>
+        <p>サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポート専用のままのポリシーを示します(読み取り専用)。</p>
         <p class="links"><a href="https://capolicymanager.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NKSNH83GH4N">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -204,7 +204,7 @@
       <article class="card">
         <h3>CA Policy Analyzer</h3>
         <p>条件付きアクセスで管理者を除外したままの穴、管理者のロックアウト、レガシー認証(IMAP/POP3/SMTP)のブロック漏れが気になる管理者向けです。</p>
-        <p>ポリシーの JSON をローカルで分析し、これらの隙間と NIST SP 800-53・DISA STIG・Microsoft の基準との差を洗い出します(テナントには接続しません)。</p>
+        <p>ポリシーの JSON をローカルで分析し、これらの隙間と NIST SP 800-53・DISA STIG・Microsoft の基準との差を洗い出します(テナントには接続しません)。ロックアウトの診断結果は画面には表示されず、Pro の Excel・PDF の出力に含まれます。</p>
         <p class="links"><a href="https://capolanalyzer.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
@@ -249,7 +249,7 @@
     </ul>
 
     <h2 id="products-en">Products</h2>
-    <p>All products are desktop apps for Windows 10/11, available from the Microsoft Store. For products with a paid edition (in-app purchase), see each product site for what you can use for free and how the paid edition differs.</p>
+    <p>All products are desktop apps for Windows 10/11, available from the Microsoft Store. Dependa, SecureNavigator, and CA Policy Manager have a free range and a paid edition (in-app purchase); see each product site for how they differ. CA Log Viewer and DMARC Analysis Assistant are free to use. CA Policy Analyzer offers a 15-day trial, after which a Standard or Pro add-on (in-app purchase) is required.</p>
     <div class="cards">
       <article class="card">
         <h3>Dependa</h3>
@@ -260,7 +260,7 @@
       <article class="card">
         <h3>SecureNavigator</h3>
         <p>For small-business administrators who want to self-check gaps in their security controls without specialist knowledge, and explain them to management.</p>
-        <p>Organizes weak points and possible responses by attack scenario and offers a reference check against the IPA small-business guideline (not a compliance assessment). It works offline, and assessment data is not sent out.</p>
+        <p>Organizes weak points and possible responses by attack scenario and offers a reference check against the IPA small-business guideline (not a compliance assessment). Assessment data is not sent out (except for Microsoft Store purchases and restores, and the license check at startup), and assessments need no internet connection.</p>
         <p class="links"><a href="https://secure-navigator.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9N7MGPLZW5V4">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -284,7 +284,7 @@
       <article class="card">
         <h3>CA Policy Analyzer</h3>
         <p>For administrators concerned about Conditional Access gaps from excluded admins, administrator lockout, and legacy authentication (IMAP/POP3/SMTP) that is not blocked.</p>
-        <p>Analyzes policy JSON locally to surface these gaps and the differences from NIST SP 800-53, DISA STIG, and Microsoft baselines (no connection to your tenant).</p>
+        <p>Analyzes policy JSON locally to surface these gaps and the differences from NIST SP 800-53, DISA STIG, and Microsoft baselines (no connection to your tenant). Lockout diagnostic results are not shown on screen; they are included in the Pro Excel and PDF output.</p>
         <p class="links"><a href="https://capolanalyzer.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9NR10PX75754">Microsoft Store</a></p>
       </article>
     </div>
