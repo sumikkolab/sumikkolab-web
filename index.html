@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft 365 / Entra ID の運用と OSS・セキュリティ管理の課題を解決するツール | Sumikko Lab</title>
-<meta name="description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC fail の切り分け、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
+<meta name="description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC レポートの確認、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
 <link rel="canonical" href="https://sumikkolab.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="Sumikko Lab">
 <meta property="og:title" content="Microsoft 365 / Entra ID の運用と OSS・セキュリティ管理の課題を解決するツール | Sumikko Lab">
-<meta property="og:description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC fail の切り分け、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
+<meta property="og:description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC レポートの確認、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
 <meta property="og:url" content="https://sumikkolab.com/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Microsoft 365 / Entra ID の運用と OSS・セキュリティ管理の課題を解決するツール | Sumikko Lab">
-<meta name="twitter:description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC fail の切り分け、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
+<meta name="twitter:description" content="Microsoft 365 / Entra ID の条件付きアクセスの抜け、DMARC レポートの確認、OSS の利用審査、中小企業のセキュリティ自己点検など、IT 管理者が抱える課題ごとに使える Windows ツールを提供しています。Dependa・SecureNavigator・CA Policy Manager・CA Log Viewer・DMARC Analysis Assistant・CA Policy Analyzer の製品サイトへ案内します。">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,7 +57,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "CA Policy Manager",
-      "description": "条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。サインインログとポリシーから、適用されない条件とサインイン、許可・ブロックの理由、レポートモードのままのポリシーを示します(読み取り専用)。",
+      "description": "条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポートモードのままのポリシーを示します(読み取り専用)。",
       "url": "https://capolicymanager.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -77,7 +77,7 @@
     {
       "@type": "SoftwareApplication",
       "name": "DMARC Analysis Assistant",
-      "description": "DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けられず困る管理者向けです。送信元 IP ごとの集計と分類で、確認する対象を絞り込めます。分類と保存はローカル端末で行います(送信元 IP の DNS 照会を除く)。",
+      "description": "DMARC 集計レポートの内容を読み解くのが大変で、SPF・DKIM・DMARC の認証結果を把握しにくい管理者向けです。レポートを読み込み、送信元 IP ごとのメール数、DMARC 成功率、認証結果の傾向を整理して表示します。分析結果はローカル端末に保存します。",
       "url": "https://dmarc-analysis.sumikkolab.com/",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows 10, Windows 11",
@@ -164,8 +164,8 @@
       <li>設定した条件付きアクセスが想定どおり評価されたか、実際のサインインログで確認したい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>レポートモードのポリシーを有効にする前に、影響する利用者やアプリを知りたい → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>条件付きアクセスの管理者除外の穴、管理者のロックアウト、レガシー認証のブロック漏れを、ポリシーの JSON から点検したい → <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a></li>
-      <li>DMARC レポートで fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けたい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
-      <li>DMARC レポートに送信元 IP が多く、どこから確認すればよいか分からないので、なりすまし疑いの多い送信元から順に確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>DMARC レポートを読み込み、SPF・DKIM・DMARC の認証結果の傾向を整理して確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>DMARC レポートに送信元 IP が多く、どこから確認すればよいか分からないので、送信元 IP ごとのメール数と DMARC 成功率を一覧で確認したい → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
     </ul>
 
     <h2 id="products">製品</h2>
@@ -186,7 +186,7 @@
       <article class="card">
         <h3>CA Policy Manager</h3>
         <p>条件付きアクセスのポリシーが増え、ゲストのサインインなど、どのポリシーも適用されていない箇所が分からなくなった管理者向けです。</p>
-        <p>サインインログとポリシーから、適用されない条件とサインイン、許可・ブロックの理由、レポートモードのままのポリシーを示します(読み取り専用)。</p>
+        <p>サインインログとポリシーから、適用されない条件とサインイン、ブロックの理由、ポリシーごとの結果、レポートモードのままのポリシーを示します(読み取り専用)。</p>
         <p class="links"><a href="https://capolicymanager.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9NKSNH83GH4N">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -197,8 +197,8 @@
       </article>
       <article class="card">
         <h3>DMARC Analysis Assistant</h3>
-        <p>DMARC 集約レポートで SPF/DKIM が fail した送信元が、なりすまし疑いか、転送・メーリングリスト由来かを切り分けられず困る管理者向けです。</p>
-        <p>送信元 IP ごとの集計と分類で、確認する対象を絞り込めます。分類と保存はローカル端末で行います(送信元 IP の DNS 照会を除く)。</p>
+        <p>DMARC 集計レポートの内容を読み解くのが大変で、SPF・DKIM・DMARC の認証結果を把握しにくい管理者向けです。</p>
+        <p>レポートを読み込み、送信元 IP ごとのメール数、DMARC 成功率、認証結果の傾向を整理して表示します。分析結果はローカル端末に保存します。</p>
         <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">製品サイト</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -244,8 +244,8 @@
       <li>I want to confirm from actual sign-in logs that Conditional Access was evaluated as intended → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>I want to know which users and apps a report-only policy would affect before I turn it on → <a href="https://ca-log-viewer.sumikkolab.com">CA Log Viewer</a></li>
       <li>I want to check my policy JSON for excluded-admin gaps, administrator lockout, and unblocked legacy authentication → <a href="https://capolanalyzer.sumikkolab.com">CA Policy Analyzer</a></li>
-      <li>I want to tell whether senders failing in DMARC reports are suspected spoofing or forwarding/mailing-list traffic → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
-      <li>I have many source IPs in my DMARC reports and want to check the ones with the most suspected spoofing first → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>I want to import DMARC reports and review the pattern of SPF, DKIM, and DMARC authentication results → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
+      <li>I have many source IPs in my DMARC reports and want to see the message count and DMARC pass rate for each source IP in one list → <a href="https://dmarc-analysis.sumikkolab.com">DMARC Analysis Assistant</a></li>
     </ul>
 
     <h2 id="products-en">Products</h2>
@@ -266,7 +266,7 @@
       <article class="card">
         <h3>CA Policy Manager</h3>
         <p>For administrators whose Conditional Access policies have multiplied and who can no longer tell which conditions or sign-ins, such as guest sign-ins, have no policy applied.</p>
-        <p>Uses sign-in logs and policies to show conditions and sign-ins with no policy applied, why sign-ins were allowed or blocked, and policies left in report-only mode (read-only).</p>
+        <p>Uses sign-in logs and policies to show conditions and sign-ins with no policy applied, why sign-ins were blocked, per-policy results, and policies left in report-only mode (read-only).</p>
         <p class="links"><a href="https://capolicymanager.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9NKSNH83GH4N">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -277,8 +277,8 @@
       </article>
       <article class="card">
         <h3>DMARC Analysis Assistant</h3>
-        <p>For administrators who cannot tell whether a sender failing SPF/DKIM in DMARC aggregate reports is suspected spoofing or forwarding/mailing-list traffic.</p>
-        <p>Narrows down what to check with per-source-IP summaries and classification. Classification and storage happen on the local device (except DNS lookups of source IPs).</p>
+        <p>For administrators who find DMARC aggregate reports hard to read and cannot easily grasp SPF, DKIM, and DMARC authentication results.</p>
+        <p>Imports the reports and organizes message counts, DMARC pass rate, and the pattern of authentication results for each source IP. Analysis results are stored on the local device.</p>
         <p class="links"><a href="https://dmarc-analysis.sumikkolab.com">Product site</a><a href="https://apps.microsoft.com/detail/9MW671KFZL9B">Microsoft Store</a></p>
       </article>
       <article class="card">
@@ -316,7 +316,7 @@ var META = {
   },
   en: {
     title: 'Windows tools that solve Microsoft 365 / Entra ID, OSS, and security management problems | Sumikko Lab',
-    description: 'Sumikko Lab publishes a Windows tool for each problem IT administrators face: finding Conditional Access gaps, telling suspected spoofing from forwarding in DMARC reports, reviewing OSS from an SBOM, and self-checking small-business security. Dependa, SecureNavigator, CA Policy Manager, CA Log Viewer, DMARC Analysis Assistant, and CA Policy Analyzer are listed.'
+    description: 'Sumikko Lab publishes a Windows tool for each problem IT administrators face: finding Conditional Access gaps, reviewing DMARC reports, reviewing OSS from an SBOM, and self-checking small-business security. Dependa, SecureNavigator, CA Policy Manager, CA Log Viewer, DMARC Analysis Assistant, and CA Policy Analyzer are listed.'
   }
 };
 function setLang(lang) {
